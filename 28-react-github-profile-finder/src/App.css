@@ -1,0 +1,327 @@
+.app {
+  width: min(100% - 32px, 900px);
+  margin: auto;
+  padding: 28px 0;
+}
+
+.header,
+.brand,
+.search-form,
+.profile-top,
+.stats,
+.section-heading,
+.repo-meta {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.section-heading {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.github-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #c6f6d5;
+  color: #12291c;
+  font-size: 13px;
+}
+
+.badge,
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  color: #a5b6cc;
+  font-weight: 700;
+}
+
+.hero {
+  margin: 65px 0 28px;
+}
+
+.eyebrow {
+  color: #8ee6b1;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 7vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  color: #9aabc3;
+  line-height: 1.7;
+}
+
+.search-form {
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #304158;
+  border-radius: 15px;
+  background: #172337;
+}
+
+.search-icon {
+  padding-left: 8px;
+  font-size: 25px;
+  color: #a6b8d1;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: white;
+  font: inherit;
+}
+
+.search-form input:focus-visible {
+  outline: 1px solid #8ee6b1;
+}
+
+button,
+.profile-link {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 20px;
+  background: #baf3ce;
+  color: #102a1b;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.error,
+.status {
+  margin: 20px 0;
+  color: #b3c2d8;
+  line-height: 1.6;
+}
+
+.error {
+  color: #ff9a9a;
+}
+
+.empty-state {
+  margin: 40px 0;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px dashed #35455c;
+  border-radius: 20px;
+}
+
+.empty-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.empty-state h2 {
+  margin-bottom: 10px;
+}
+
+.empty-state p,
+.bio,
+.repo-card p {
+  color: #a1b1c7;
+  line-height: 1.7;
+}
+
+.profile-section {
+  margin-top: 28px;
+}
+
+.profile-card,
+.repo-card {
+  border: 1px solid #2b3d54;
+  border-radius: 18px;
+  background: #172337;
+}
+
+.profile-card {
+  padding: 25px;
+}
+
+.profile-top {
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #354c65;
+  object-fit: cover;
+}
+
+.profile-identity {
+  display: grid;
+  gap: 8px;
+}
+
+.profile-identity h2 {
+  font-size: 25px;
+  overflow-wrap: anywhere;
+}
+
+.profile-identity a,
+.profile-details a {
+  color: #9ce9ba;
+  text-decoration: none;
+}
+
+.public-label {
+  color: #9aabc3;
+  font-size: 12px;
+}
+
+.bio {
+  margin: 20px 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+  color: #bac7d8;
+  font-size: 13px;
+}
+
+.stats {
+  justify-content: space-around;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #304158;
+  border-bottom: 1px solid #304158;
+}
+
+.stats div {
+  display: grid;
+  gap: 8px;
+  text-align: center;
+}
+
+.stats span {
+  color: #a1b1c7;
+  font-size: 12px;
+}
+
+.stats strong {
+  font-size: 23px;
+}
+
+.profile-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.repos-section {
+  margin-top: 35px;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading span {
+  color: #a1b1c7;
+  font-size: 12px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.repo-card {
+  min-width: 0;
+  padding: 18px;
+}
+
+.repo-name {
+  color: #a7edc1;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.repo-card p {
+  margin: 12px 0 20px;
+  font-size: 13px;
+}
+
+.repo-meta {
+  flex-wrap: wrap;
+  gap: 14px;
+  color: #b4c3d8;
+  font-size: 11px;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 20px;
+  border-top: 1px solid #2b3d54;
+  text-align: center;
+  color: #8394ad;
+  font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    margin-top: 45px;
+  }
+
+  .search-form {
+    gap: 7px;
+  }
+
+  .search-form button {
+    padding: 12px;
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .avatar {
+    width: 78px;
+    height: 78px;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats span {
+    font-size: 10px;
+  }
+
+  .stats strong {
+    font-size: 19px;
+  }
+}
